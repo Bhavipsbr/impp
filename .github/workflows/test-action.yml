@@ -1,0 +1,18 @@
+name: Test Action with Email
+
+on:
+  workflow_dispatch: # Allows manual triggering
+  push: # Trigger when code is pushed
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: 23f2003901@ds.study.iitm.ac.in
+        run: echo "Hello, world! This step contains my email."
